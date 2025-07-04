@@ -76,8 +76,8 @@ public class MainWindow extends JFrame {
 
         tabbedPane.addTab("Menadzeri", menadzerIkona, menadzerView, "Lista svih menadzera");
         tabbedPane.addTab("Prodavci", prodavacIkona, prodavacView, "Lista svih prodavaca");
-        tabbedPane.addTab("Elektricni Uređaji", elektricniUredjajIkona, elektricniUredjajView, "List svih elektricnih uređaja");
-        tabbedPane.addTab("Kvarljiva Roba", kvarljivUredjajIkona, kvarljivaRobaView, "List sve kvarljive robe");
+        tabbedPane.addTab("Elektricni Uređaji", elektricniUredjajIkona, elektricniUredjajView, "Lista svih elektricnih uređaja");
+        tabbedPane.addTab("Kvarljiva Roba", kvarljivUredjajIkona, kvarljivaRobaView, "Lista sve kvarljive robe");
         tabbedPane.addTab("Uloge", ulogaIkona, ulogaView, "Lista svih uloga");
 
         this.getContentPane().add(tabbedPane);
