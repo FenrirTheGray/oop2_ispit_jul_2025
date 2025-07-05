@@ -43,9 +43,9 @@ public class ProdavacView extends JPanel {
         this.prodavciTable = new JTable(prodavacTableModel);
         prodavciTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
-        this.dodajButton = new JButton("Dodaj Menadzera");
-        this.izmeniButton = new JButton("Izmeni Menadzera");
-        this.ukloniButton = new JButton("Ukloni Menadzera");
+        this.dodajButton = new JButton("Dodaj");
+        this.izmeniButton = new JButton("Izmeni");
+        this.ukloniButton = new JButton("Ukloni");
 
         this.scrollPane = new JScrollPane(prodavciTable);
         this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
