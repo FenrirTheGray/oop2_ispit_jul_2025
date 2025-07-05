@@ -12,9 +12,6 @@ import java.io.Serial;
 import java.util.ArrayList;
 
 public class MenadzerView extends JPanel {
-    /**
-     *
-     */
     @Serial
     private static final long serialVersionUID = 3708749176790722870L;
 
