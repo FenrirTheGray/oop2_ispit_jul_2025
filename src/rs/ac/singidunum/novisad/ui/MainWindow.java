@@ -43,7 +43,7 @@ public class MainWindow extends JFrame {
     public void init() {
         this.setTitle("Main Window");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(1000, 1200);
+        this.setSize(1000, 600);
         this.setMinimumSize(new Dimension(800, 600));
         this.setLocationRelativeTo(null);
 

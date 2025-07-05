@@ -41,9 +41,9 @@ public class MenadzerView extends JPanel {
         this.menadzeriTable = new JTable(menadzerTableModel);
         menadzeriTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
-        this.dodajButton = new JButton("Dodaj Menadzera");
-        this.izmeniButton = new JButton("Izmeni Menadzera");
-        this.ukloniButton = new JButton("Ukloni Menadzera");
+        this.dodajButton = new JButton("Dodaj");
+        this.izmeniButton = new JButton("Izmeni");
+        this.ukloniButton = new JButton("Ukloni");
 
         this.scrollPane = new JScrollPane(menadzeriTable);
         this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));

@@ -39,9 +39,9 @@ public class UlogaView extends JPanel {
         this.ulogeTable = new JTable(ulogaTableModel);
         this.ulogeTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
-        this.dodajButton = new JButton("Dodaj Ulogu");
-        this.izmeniButton = new JButton("Izmeni Ulogu");
-        this.ukloniButton = new JButton("Ukloni Ulogu");
+        this.dodajButton = new JButton("Dodaj");
+        this.izmeniButton = new JButton("Izmeni");
+        this.ukloniButton = new JButton("Ukloni");
 
         this.scrollPane = new JScrollPane(ulogeTable);
         this.buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
