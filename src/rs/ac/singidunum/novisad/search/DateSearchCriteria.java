@@ -3,9 +3,6 @@ package rs.ac.singidunum.novisad.search;
 import java.lang.reflect.Field;
 import java.util.Date;
 
-/**
- * Search criteria for date fields
- */
 public class DateSearchCriteria implements SearchCriteria<Object> {
     private String fieldName;
     private Date fromDate;

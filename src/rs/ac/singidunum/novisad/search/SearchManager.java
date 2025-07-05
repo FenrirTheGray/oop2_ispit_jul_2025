@@ -4,9 +4,6 @@ import java.util.Date;
 import java.util.List;
 import rs.ac.singidunum.novisad.model.*;
 
-/**
- * Facade class for managing searches across all object types
- */
 public class SearchManager {
     
     private static final String FIELD_NAZIV = "naziv";
