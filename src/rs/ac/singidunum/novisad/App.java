@@ -1,11 +1,10 @@
 package rs.ac.singidunum.novisad;
 
-import rs.ac.singidunum.novisad.model.*;
-import rs.ac.singidunum.novisad.ui.MainWindow;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import rs.ac.singidunum.novisad.model.*;
+import rs.ac.singidunum.novisad.ui.MainWindow;
 
 public class App {
 
@@ -23,7 +22,7 @@ public class App {
     }
 
     private static void dodajPodatke(ArrayList<ElektricniUredjaj> elektricniUredjaji, ArrayList<KvarljivaRoba> kvarljivaRoba, ArrayList<Menadzer> menadzeri, ArrayList<Prodavac> prodavci, ArrayList<Uloga> uloge) {
-        // 1. Generate Uloga instances first
+        
         uloge.add(new Uloga("Direktor", "Upravljanje celokupnim poslovanjem kompanije"));
         uloge.add(new Uloga("Menadzer prodaje", "Upravljanje prodajnim timom i procesima"));
         uloge.add(new Uloga("Finansijski menadzer", "Upravljanje finansijskim operacijama"));
@@ -35,7 +34,7 @@ public class App {
         uloge.add(new Uloga("Logisticki menadzer", "Upravljanje logistikom i skladistenjem"));
         uloge.add(new Uloga("Menadzer razvoja", "Upravljanje razvojnim projektima"));
 
-        // 2. Generate Menadzer instances based on those Uloga instances
+        
         menadzeri.add(new Menadzer("Marko", "Petrovic", 120000.0, "Direktor", "Visoka", uloge.get(0)));
         menadzeri.add(new Menadzer("Ana", "Nikolic", 95000.0, "Menadzer", "Visoka", uloge.get(1)));
         menadzeri.add(new Menadzer("Stefan", "Milic", 100000.0, "Menadzer", "Visoka", uloge.get(2)));
@@ -47,7 +46,7 @@ public class App {
         menadzeri.add(new Menadzer("Uros", "Popovic", 87000.0, "Menadzer", "Visoka", uloge.get(8)));
         menadzeri.add(new Menadzer("Marija", "Stankovic", 93000.0, "Menadzer", "Visoka", uloge.get(9)));
 
-        // 3. Generate Prodavac instances based on Menadzer instances
+        
         prodavci.add(new Prodavac("Petar", "Mitrovic", 60000.0, "Prodavac", "Srednja", menadzeri.get(1), "Prodajna sala"));
         prodavci.add(new Prodavac("Jovana", "Radic", 55000.0, "Prodavac", "Srednja", menadzeri.get(1), "Prodajna sala"));
         prodavci.add(new Prodavac("Milos", "Antic", 58000.0, "Prodavac", "Srednja", menadzeri.get(1), "Kasa"));
@@ -59,7 +58,7 @@ public class App {
         prodavci.add(new Prodavac("Nemanja", "Zivkovic", 54000.0, "Prodavac", "Srednja", menadzeri.get(4), "Prodajna sala"));
         prodavci.add(new Prodavac("Katarina", "Bogdanovic", 63000.0, "Prodavac", "Visoka", menadzeri.get(1), "Prodajna sala"));
 
-        // Generate ElektricniUredjaj instances
+        
         Calendar cal = Calendar.getInstance();
 
         cal.set(2023, 5, 15);
@@ -92,7 +91,7 @@ public class App {
         cal.set(2023, 10, 18);
         elektricniUredjaji.add(new ElektricniUredjaj("Electrolux Klimа", 80000.0, "Svedska", cal.getTime(), "EACS-12HAT", 79.0f, 54.8f, 30.0f, 220, 1200));
 
-        // Generate KvarljivaRoba instances
+        
         cal.set(2024, 11, 15);
         Date rok1 = cal.getTime();
         cal.set(2024, 1, 10);
